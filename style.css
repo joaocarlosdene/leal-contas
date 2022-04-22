@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*--------topo----------*/
+.topo{
+    background-color:#4D9D34;
+    color: white;
+}
+.p-topo{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    padding: 0.5rem;
+}
+
+.link-topo{
+    color: white;
+    text-decoration: none;
+}
+.agendar{
+    background-color: #3A526A;
+    padding: 1rem;
+}
+.rede-social{
+    font-size: 1rem;
+}
+/*--------MENU------------*/
+.logo{
+    width: 220px;
+}
+.nav-link{
+    font-family: "Poppins", sans-serif;
+    font-weight:700;
+}
+/*--------CAROUSEL-------*/
+
+.carousel-item{
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    z-index: -1;
+}
+.carousel-item h2{
+    opacity: 0;
+}
+.carousel-item p{
+    opacity: 0;
+}
+.carousel-item.active h2{
+    animation: fadeInLeft 1.5s ease forwards;
+}
+.carousel-item.active p{
+    animation: fadeInRight 1.5s ease forwards;
+}
+.titulo{
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+    text-shadow: black 2px 3px 2px;
+    border-radius: 3px;
+    color: rgb(238, 236, 236);
+    text-align: center;
+    padding-top: 20%;
+}
+/*--------CONTEÚDO-------*/
+.mapa{
+    width: 550px;
+    height: 400px;
+}
+/*--------BLOCO---------*/
+.bloco{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.oferecemos{
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+}
+.img-bloco{
+    height: 250px;
+    width: 300px;
+}
+.link-bloco{
+    text-decoration: none;
+    color: #4C5269;
+}
+
+/*---------AJUDA----------*/
+.anos{
+    margin-bottom: 3rem;
+    width: 20%;
+}
+.ajuda{
+    margin-top: 2rem;
+    color: white;
+    margin-top: 3rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.ajuda::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+.texto-ajuda{
+    color: whitesmoke;
+    position: relative;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.whatsapp{
+    text-decoration: none;
+    color: #18BB84;
+}
+/*--------RODAPÉ---------*/
+.rodape{
+    color: white;
+    background-color: #222222;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.img-rodape{
+    padding-bottom: 1rem;
+    width: 10rem;
+}
+.r1{
+    padding-bottom: 4rem;
+}
+/*---------RODAPE1----------*/
+.rodape1{
+    background-color: black;
+    color: whitesmoke;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+}
+/*------PAGE CONTACT-NOS----------*/
+.button-enviar{
+    padding: 0.7rem 2rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #006532;
+}
+.button-enviar:hover{
+    background-color: white;
+    border: solid #006532;
+    color: #006532;
+}
+.list{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.list1{
+    padding-top: 1rem;
+}
+/*------PAGE SOBRE-NÓS----------*/
+.img-sobre{
+    width: 500px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+/*--------RESPONSIVIDADE-----------*/
+@media (max-width: 600px) {
+    .carousel-item{
+        height: 50vh;
+    }
+    
+    .titulo{
+        font-size: 2rem;
+    }
+    .mapa{
+        width: 100%;
+    }
+    .list{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .anos{
+        width: 40%;
+    }
+    .rede-social{
+        font-size: 1.5rem;
+    }
+    .img-sobre{
+        width: 100%;
+    }
+}
+/*-------ANIMAÇÃO--------*/
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
