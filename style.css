@@ -69,6 +69,9 @@ body{
 .carousel-item.active p{
     animation: fadeInRight 1.5s ease forwards;
 }
+.main-btn{
+    animation: apper 6s ease forwards;
+}
 .titulo{
     font-size: 3rem;
     font-family: 'Open Sans', sans-serif;
@@ -78,6 +81,23 @@ body{
     color: rgb(238, 236, 236);
     text-align: center;
     padding-top: 20%;
+}
+.main-btn{
+    background-color: #4D9D34;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    border: 3px solid transparent;
+    transition: 0.5s;
+    font-size: 1rem;
+    opacity: 0;
+}
+.main-btn:hover{
+    background-color: transparent;
+    border-color:#4D9D34;
 }
 /*--------CONTEÚDO-------*/
 .mapa{
@@ -252,5 +272,13 @@ body{
     100%{
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+@keyframes apper{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
