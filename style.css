@@ -42,7 +42,7 @@ body{
 /*--------CAROUSEL-------*/
 
 .carousel-item{
-    height: 650px;
+    height: 550px;
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -70,7 +70,7 @@ body{
     animation: fadeInRight 1.5s ease forwards;
 }
 .main-btn{
-    animation: apper 6s ease forwards;
+    animation: apper 4s ease forwards;
 }
 .titulo{
     font-size: 3rem;
@@ -80,7 +80,7 @@ body{
     border-radius: 3px;
     color: rgb(238, 236, 236);
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 .main-btn{
     background-color: #4D9D34;
@@ -109,7 +109,8 @@ body{
     margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    
+    opacity: 0;
+    animation: fadeInTop 1.5s ease forwards;
 }
 .oferecemos{
     margin-top: 3rem;
@@ -179,7 +180,7 @@ body{
 /*--------RODAPÉ---------*/
 .rodape{
     color: white;
-    background-color: #222222;
+    background-color: #141414;
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
@@ -191,6 +192,16 @@ body{
 }
 .r1{
     padding-bottom: 4rem;
+    text-decoration: none;
+}
+.link-rodape{
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
 }
 /*---------RODAPE1----------*/
 .rodape1{
@@ -198,8 +209,14 @@ body{
     color: whitesmoke;
     padding: 1rem;
     font-family: "Poppins", sans-serif;
-    font-size: 10px;
+    font-size: 0.8rem;
 }
+
+.copy{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 /*------PAGE CONTACT-NOS----------*/
 .button-enviar{
     padding: 0.7rem 2rem;
@@ -227,10 +244,15 @@ body{
     padding: 1rem;
     margin-bottom: 1rem;
 }
+.sobre{
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    color: rgba(51, 49, 49, 0.897);
+    width: 80%;
+}
 /*--------RESPONSIVIDADE-----------*/
 @media (max-width: 600px) {
     .carousel-item{
-        height: 50vh;
+        height: 45vh;
     }
     
     .titulo{
@@ -274,6 +296,16 @@ body{
         transform: translateX(0px);
     }
 }
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 @keyframes apper{
     0%{
         opacity: 0;
@@ -281,4 +313,49 @@ body{
     100%{
         opacity: 1;
     }
+}
+/*---------POP-UP--------*/
+.modal{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.692);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.modal-content{
+    background-color: white;
+    padding: 1rem 1rem;
+    width: 400px;
+    border-radius: 0.5rem;
+}
+.fechar{
+    text-align: end;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.fechar:hover{
+    color:#006532;
+    font-weight: bold;
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+/*------PAGINA POLITICA --------*/
+.politica{
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    color: rgba(51, 49, 49, 0.897);
 }
