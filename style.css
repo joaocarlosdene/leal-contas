@@ -132,6 +132,7 @@ body{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
+    border-radius: 0.3rem;
 }
 .link-bloco:hover{
     color: #4D9D34;
@@ -356,6 +357,11 @@ body{
 }
 /*------PAGINA POLITICA --------*/
 .politica{
+    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+    color: rgba(51, 49, 49, 0.897);
+}
+/*--------PAGINA AUDITORIA-------*/
+.auditoria{
     font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
     color: rgba(51, 49, 49, 0.897);
 }
