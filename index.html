@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>.cookieConsentContainer{z-index:999;width:100%; text-align: center;min-height:20px;box-sizing:border-box;padding:50px 50px 50px 50px;background:#0a0a0ae0;overflow:hidden;position:fixed;bottom:0;right:0;display:none}.cookieConsentContainer .cookieTitle a{font-family:OpenSans,arial,sans-serif;color:#fff;font-size:22px;line-height:20px;display:block}.cookieConsentContainer .cookieDesc p{margin:0;padding:0;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:13px;line-height:20px;display:block;margin-top:10px}.cookieConsentContainer .cookieDesc a{font-family:OpenSans,arial,sans-serif;color:#fff;text-decoration:underline}.cookieConsentContainer .cookieButton a{display:inline-block;font-family:OpenSans,arial,sans-serif;color:#fff;font-size:14px;font-weight:700;margin-top:14px;background:#000;box-sizing:border-box;padding:15px 24px;text-align:center;transition:background .3s}.cookieConsentContainer .cookieButton a:hover{cursor:pointer;background:#3e9b67}@media (max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}</style>
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 <body>
     <div class="topo">
@@ -54,7 +54,7 @@
                               <li><a class="dropdown-item" href="servicos/contabilidade.html">CONTABILIDADE</a></li>
                               <li><a class="dropdown-item" href="servicos/recursos-humanos.html">RECURSOS HUMANOS</a></li>
                               <li><a class="dropdown-item" href="servicos/auditoria-financeira.html">AUDITORIA FINANCEIRA</a></li>
-                              <li><a class="dropdown-item" href="servicos/planejamento-empresarial.html">PLANEJAMENTO EMPRESARIAL</a></li>
+                              <li><a class="dropdown-item" href="servicos/planejamento-empresarial.html">PLANEAMENTO EMPRESARIAL</a></li>
                             </ul>
                           </li>
                           <a class="nav-link" href="contacte-nos.html">CONTACTE-NOS</a>
@@ -72,7 +72,7 @@
           <div class="carousel-item active" style="background-image: url('images/Recortadas/Capa.jpeg');"  >
               <div class="container titulo">
                 <h2>Ajudamos Empresas </h2>
-                <p>Se Inovarem-se e Liderar.</p>
+                <p>A se Inovar e Liderar.</p>
                 <a href="https://wa.me/message/OKE3C6ZEK2SZA1" target="_blank"><button class="main-btn">Contacte-nos <i class="fab fa-whatsapp"></i></button></a>
               </div>
           </div>
@@ -101,9 +101,9 @@
         </button>
         </div>
     <div class="bloco text-center">
-        <h2 class="oferecemos">O QUE OFERECEMOS:</h2>
+        <h2 data-aos="fade-right"  class="oferecemos">O QUE OFERECEMOS:</h2>
         <div class="bloco row d-flex justify-content-center">
-          <a class="link-bloco col-9 col-md-3 text-center" href="servicos/planejamento-empresarial.html">
+          <a data-aos="flip-left"  class="link-bloco col-9 col-md-3 text-center" href="servicos/planejamento-empresarial.html">
             <div>
               <img class="img-bloco" src="images/Recortadas/estratégia.jpeg" alt="">
               <p>ESTRATÉGIA EMPRESARIAL</p>
@@ -114,7 +114,7 @@
               
             </div>
           </a>
-          <a href="servicos/contabilidade.html" class="link-bloco col-9 col-md-3 text-center">
+          <a data-aos="flip-right" href="servicos/contabilidade.html" class="link-bloco col-9 col-md-3 text-center">
             <div >
               <img class="img-bloco" src="images/Recortadas/Planejando.jpeg" alt="">
               <p>CONTABILIDADE</p>
@@ -124,7 +124,7 @@
               </div>
             </div>
           </a>
-          <a href="servicos/recursos-humanos.html" class="link-bloco col-9 col-md-3 ">
+          <a data-aos="flip-left"  href="servicos/recursos-humanos.html" class="link-bloco col-9 col-md-3 ">
             <div >
               <img class="img-bloco" src="images/Recortadas/Escrevendo.jpeg" alt="">
               <p>RECURSOS HUMANOS</p>
@@ -136,7 +136,7 @@
           </a> 
           </div>
           <div class="bloco row d-flex justify-content-center">
-            <a class="link-bloco col-9 col-md-3 text-center" href="servicos/auditoria-financeira.html">
+            <a data-aos="flip-right"  class="link-bloco col-9 col-md-3 text-center" href="servicos/auditoria-financeira.html">
               <div>
                 <img class="img-bloco" src="images/Recortadas/WhatsApp Image 2022-04-20 at 9.05.38 PM (1).jpeg" alt="">
                 <p>AUDITORIA FINANCEIRA</p>
@@ -146,7 +146,7 @@
                 </div>
               </div>
             </a>
-            <a href="servicos/financiamento.html" class="link-bloco col-9 col-md-3 text-center">
+            <a data-aos="flip-left"  href="servicos/financiamento.html" class="link-bloco col-9 col-md-3 text-center">
               <div >
                 <img class="img-bloco" src="images/Recortadas/planejando1.jpeg" alt="">
                 <p>PLANOS DE FINANCIAMENTO</p>
@@ -156,7 +156,7 @@
                 </div>
               </div>
             </a> 
-            <a href="servicos/consultoria.html" class="link-bloco col-9 col-md-3 text-center">
+            <a data-aos="flip-right"  href="servicos/consultoria.html" class="link-bloco col-9 col-md-3 text-center">
               <div >
                 <img class="img-bloco" src="images/Recortadas/WhatsApp Image 2022-04-20 at 9.05.38 PM.jpeg" alt="">
                 <p>CONSULTORIA</p>
@@ -230,5 +230,11 @@
       
     </div>
     <script>var purecookieTitle="Cookies.",purecookieDesc="Os cookies ajudam-nos a oferecer o melhor dos nossos serviços. </br>Ao utilizar a nossa página, concorda com nossa política de cookies.</br>",purecookieLink='<a href="https://www.cssscript.com/privacy-policy/" target="_blank">Política de Privacidade</a>',purecookieButton="Aceitar";function pureFadeIn(e,o){var i=document.getElementById(e);i.style.opacity=0,i.style.display=o||"block",function e(){var o=parseFloat(i.style.opacity);(o+=.02)>1||(i.style.opacity=o,requestAnimationFrame(e))}()}function pureFadeOut(e){var o=document.getElementById(e);o.style.opacity=1,function e(){(o.style.opacity-=.02)<0?o.style.display="none":requestAnimationFrame(e)}()}function setCookie(e,o,i){var t="";if(i){var n=new Date;n.setTime(n.getTime()+24*i*60*60*1e3),t="; expires="+n.toUTCString()}document.cookie=e+"="+(o||"")+t+"; path=/"}function getCookie(e){for(var o=e+"=",i=document.cookie.split(";"),t=0;t<i.length;t++){for(var n=i[t];" "==n.charAt(0);)n=n.substring(1,n.length);if(0==n.indexOf(o))return n.substring(o.length,n.length)}return null}function eraseCookie(e){document.cookie=e+"=; Max-Age=-99999999;"}function cookieConsent(){getCookie("purecookieDismiss")||(document.body.innerHTML+='<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>'+purecookieTitle+'</a></div><div class="cookieDesc"><p>'+purecookieDesc+" "+purecookieLink+'</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">'+purecookieButton+"</a></div></div>",pureFadeIn("cookieConsentContainer"))}function purecookieDismiss(){setCookie("purecookieDismiss","1",1),pureFadeOut("cookieConsentContainer")}window.onload=function(){cookieConsent()};</script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1500,
+      });
+    </script>
+  </body>
 </html>
